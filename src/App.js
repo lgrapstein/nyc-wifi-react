@@ -3,20 +3,25 @@ import logo from '../public/wifinyc.png';
 import SimpleMap from './simpleMap';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <form>
+            Find internets within
+            <input type="number" id="distance" value="1" required="required" />
+            <select id="measure">
+              <option value="miles">mile(s)</option>
+              <option value="kilometers">kilometer(s)</option>
+            </select>
+            of here.<br></br>
+            <a href="#" class="button">FIND INTERNET!</a>
+          </form>
           <SimpleMap />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
 }
-
-export default App;
