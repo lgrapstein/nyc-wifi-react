@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../public/wifinyc.png';
-import SimpleMap from './SimpleMap.js';
+import SimpleMap from './simple_map.js';
 import ProviderForm from './components/provider_form.js';
 import Marker from './components/marker.js';
 import InfoWindow from './components/info_window.js';
