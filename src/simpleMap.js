@@ -9,7 +9,7 @@ var SimpleMap = React.createClass({
     return {
       center: {lat: 59.95, lng: 30.33},
       zoom: 10,
-      greatPlaceCoords: {lat: 52.028611, lng: 6.021111}
+      hotspotCoords: {lat: 52.028611, lng: 6.021111}
     };
   },
 
@@ -23,10 +23,6 @@ var SimpleMap = React.createClass({
           lat={59.955413}
           lng={30.337844}
           text={'Kreyser Avrora'}
-        />
-        <HotSpotLocations
-          {...this.props.hotspotCoords}
-          text={'Posbank'}
         />
       </GoogleMap>
     );
